@@ -1,6 +1,10 @@
 # Appliance-Beep-Detector
 Arduino-based device for detecting appliance beeps and sending a notification. Uses an Arduino Uno R4 WiFi, electret microphone, and Goertzel tone detection to identify beep patterns from appliances such as washers, dryers, or ovens.
 
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Arduino-blue)
+![Python](https://img.shields.io/badge/tool-Python-yellow)
+![Hardware](https://img.shields.io/badge/hardware-Arduino%20Uno%20R4%20WiFi-orange)
 ---
 ## Repository Structure
 
