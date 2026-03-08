@@ -33,7 +33,7 @@ Connect:
 The detector works by:
 
 1. Sampling audio at 20 kHz (needs to be at least 2x your highest frequency of interest to account for the Nyquist limit)
-2. Running Goertzel filters at the target frequencies
+2. Running Goertzel filters at the target frequencies. Goertzel used instead of FFT because it requires less computation for a small number of frequencies.
 3. Comparing magnitudes against a rolling baseline
 4. Using a state machine to detect the beep / pause sequence
 
