@@ -2,6 +2,15 @@
 Arduino-based device for detecting appliance beeps and sending a notification. Uses an Arduino Uno R4 WiFi, electret microphone, and Goertzel tone detection to identify beep patterns from appliances such as washers, dryers, or ovens.
 
 ---
+## Repository Structure
+
+- Arduino_Beep_Detector.ino
+  - Arduino firmware implementing the tone detector
+
+- beep_detector_logger.py
+  - Python script for logging serial data and visualising detection behaviour
+
+---
 
 ## HARDWARE
 
@@ -38,7 +47,7 @@ Each beep contains two tones:
   
 These tones and timings were determined by recording the appliance beep on a phone and analysing it in Audacity. The parameters and state machine detection logic can be modified to support different beep frequencies, durations, or patterns.
 
-Example of Audacity view including the frequency analysis where the two distinct tone can be seen as the sharp peaks (the 2400Hz one is selected, see the red line):
+Example of Audacity view including the frequency analysis where the two distinct tones can be seen as the sharp peaks (the 2400Hz one is selected, see the red line):
 
 <img width="2241" height="1244" alt="Screenshot 2026-03-08 155141" src="https://github.com/user-attachments/assets/9939ccfe-9280-45a2-9816-f4e47b36a58c" />
 
