@@ -3,14 +3,14 @@ Arduino-based device for detecting appliance beeps and sending a notification. U
 
 ---
 
-HARDWARE
+## HARDWARE
 
 - Arduino Uno R4 WiFi
 - Adafruit MAX9814 electret microphone (Adafruit product number 1713)
 
 ---
 
-WIRING
+## WIRING
 
 Connect:
 - microphone 'GND' to Arduino 'GND'
@@ -19,7 +19,7 @@ Connect:
 
 ---
 
-ARDUINO SETUP
+## ARDUINO SETUP
 
 The detector works by:
 
@@ -47,7 +47,7 @@ Example of Audacity view including the frequency analysis where the two distinct
 
 The Arduino sketch can also be configured to send a notification via Arduino cloud or by integration into other IoT / smart home systems.
 
-DETECTION TIMING NOTES
+### DETECTION TIMING NOTES
 
 The timeouts used in the detection state machine are intentionally longer than the actual beep durations.
 
@@ -58,7 +58,7 @@ This accounts for:
 
 Without these margins the detector occasionally became unreliable.
 
-LED MATRIX EQ DISPLAY
+### LED MATRIX EQ DISPLAY
 
 An LED matrix “EQ” display was included mainly for experimentation and to make use of the built-in LED matrix on the Uno R4 WiFi.
 
@@ -68,7 +68,7 @@ If running the sketch on an Arduino without the built-in matrix, the EQ section 
 
 ---
 
-PYTHON SCRIPT
+## PYTHON SCRIPT
 
 The Python script is used to help tune the detector parameters.
 
@@ -91,7 +91,7 @@ Example output plot:
 
 ---
 
-FUTURE ADDITIONS
+## FUTURE ADDITIONS
 - A Python mirror of the Arduino detection code for running analysis directly on WAV files along with an Arduino + Python pair for creating WAV files via the Arduino. This allows repeatable tuning without needing to replay recordings into the microphone each time.
 
 - A 3D printed wall mounted housing with clear acrylic lid is WIP. Photos and CAD files will be uploaded when ready.
